@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React</title>
+  </head>
+  <body>
+    <div id="rootForNormalJS" />
+    <div id="rootForReact">
+      <h1>Hello World</h1>
+    </div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+      // const heading = React.createElement("h1", {}, "Namaste React");
+      const headingForNomalJS = document.createElement("h1");
+      headingForNomalJS.innerHTML = "Namaste from Normal JavaScript";
+      const rootForNormalJS = document.getElementById("rootForNormalJS");
+      rootForNormalJS.appendChild(headingForNomalJS);
+
+      const headingForReact = React.createElement(
+        "h1",
+        { id: "title" },
+        "Namaste from React JS"
+      );
+
+      console.log(
+        "🚀 ~ file: index.html:32 ~ headingForReact",
+        headingForReact
+      );
+
+      const rootForReact = ReactDOM.createRoot(
+        document.getElementById("rootForReact")
+      );
+      rootForReact.render(headingForReact);
+    </script>
+  </body>
+</html>
