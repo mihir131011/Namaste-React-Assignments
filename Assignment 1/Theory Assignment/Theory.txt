@@ -1,0 +1,74 @@
+	Text Questions  
+	
+	Q1 - What is Emmet? 
+
+	Ans - Emmet is the plugin which helps the programmer in high speed coding in HTML, XML and other structured code formats.
+	
+	
+	Q2 - Difference between a Library and Framework?
+	
+	Ans -
+	Libraries :- 
+	Library is the pre-written code which consists of meaningful functions, classes, objects etc by any developer which allows the other community developers to integrate that particular library and complete the big or small task that needs to performed, which infers that library can be big or small. Libraries might not provide a developer an end to end support. 
+	For instance: 
+		React is a huge library but it lacks a lot of build-in features and it also does heavily depends on third-party packages like : 
+		 a) for routing you need to use react-router
+		 b) to call an API we use AXIOS, 
+		 c) for handling forms we use other libraries such as FORMIQ.
+	
+	Frameworks :-
+	Frameworks on the other hand comprises of APIs, compilers, other support programs and even libraries which has full fledged support to complete any application. 
+	Let's take an example of 
+	1. Spring Boot or, 
+	2. Express JS 
+	in the backend development which provides end-to-end support any application.
+	
+	
+	Q3 - What is CDN? Why do we use it?
+	
+    Ans:
+	Let's take an example:
+	If an Indian user accesses the content on any website which is hosted on the server present in the geographical location which is far from INDIA, data from that website's server has to travel across the internet to reach the user's computer. If the user is located far from that server, it will take a long time to load a large file, such as a video or website image. Instead, the website content is stored on CDN servers geographically closer to the users and reaches their computers much faster
+	Primary purpose to use the CDN is to reduce the latency.
+	
+	
+	Q-5  What is crossorigin in script tag?
+	
+	Ans: 
+	First let's understand what is CORS.
+	CORS stands for Cross-Origin Resource Sharing, and is a mechanism that allows resources on a web page to be requested from another domain outside their own domain. It defines a way of how a browser and server can interact to determine whether it is safe to allow the cross-origin request. CORS allows servers to specify who can access the assets on the server, among many other things.
+	Opposite of CORS is Same Origin which allows a web page to only interact with other documents that are also on the same server.
+	
+	The crossorigin attribute sets the mode of the request to an HTTP CORS Request.
+	
+	
+	Q-6 What is difference between React and ReactDOM ?
+	
+	Ans: React package holds the react source for components, state, props and all the code that core react needs for the execution. React supports react native and react 3D as well apart from react DOM, so we need to individually download the package according to requirements.
+	
+	React DOM is a package which integrates DOM part of the browser and react functionalities, in order to execute the functionalities that are provided by react itself.  
+	
+	Q - 7 What is difference between react.development.js and react.production.js files via CDN ?
+	 
+	Ans: React production links are more minified and more optimised in order that these links would be working in the production, whereas react development link are less optimised and less minified.
+	
+	Q - 8 What is async and defer? 
+	
+	Ans: Browsers has two works when executing the code.
+	1. One is that browser has to run the HTML parsing
+	2. Second is browser has to run the script tag.
+	
+	There are three ways in which browser runs the HTML parsing.
+	1. Synchronously
+		- Way to code : <script></script>
+		- What happens is that, when browser parses the  HTML parsing, when script tags comes the way of parsing, browser runs the scripts and until whole script is fetched ans loaded. HTML parsing is stopped.
+		- Once while process is finished, then HTML parsing continues.
+	2. Asynchronously
+		- Way to code : <script async></script>
+		- Here script tag is asynchronously fetched and when the script is completely fetched the script code is executed and then it continues the HTML parsing.
+		- As this is asynchronous we cannot decide the order of execution, and only can be used when there are independent scripts in the code.
+	3. By using defer.
+		- Way to code : <script defer></script>
+		- Defer continues the fetching the script and only loads the script when the HTML parsing is completed. It does not stop the HTML parsing.
+		- Order of Execution can be decided, we can use this defer functionality when multiple scripts are dependent on the each other.
+        
