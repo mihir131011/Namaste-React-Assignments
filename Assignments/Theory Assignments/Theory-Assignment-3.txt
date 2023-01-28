@@ -1,0 +1,40 @@
+# Assignment - 3
+
+Question - 1 What is JSX ?
+
+Ans : JSX is the special syntax which was introduced with the goal to easily write HTML using JS, so JSX is converted into objects by react.
+
+JSX is often called as Java Script XML, it acts like syntactic sugar for DOM manipulation.
+
+Question -2 Superpowers of JSX ?
+
+Ans :
+
+1. JSX reduces the pain of writing the lengthy code.
+2. JSX saves from XSS attacks by sanitising the code.
+
+Question - 3 Role of type attribute in <script> tag ?
+
+Ans : 
+
+Type Attribute specifies the MIME type of the content between the script tag. The default value is text/javascript. 
+
+**module**
+
+This value causes the code to be treated as a JavaScript module. The processing of the script contents is deferred. The `charset` and `defer`attributes have no effect. Unlike classic scripts, module scripts require the use of the CORS protocol for cross-origin fetching.
+
+**importantmap**
+
+This value indicates that the body of the element contains an import map. The import map is a JSON object that developers can use to control how the browser resolves module specifiers when importing [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#importing_modules_using_import_maps).
+
+**Any other value**
+
+The embedded content is treated as a data block, and won't be processed by the browser. Developers must use a valid MIME type that is not a JavaScript MIME type to denote data blocks. All of the other attributes will be ignored, including the `src` attribute.
+
+Ques - 3: Difference between {TitleComponent} vs {<TitleComponent />} vs {<TitleComponent></TitleComponent>}
+
+{TitleComponent} is just an idication in the JSX, it will not render the component but it would just point the Component. We need to call that Component in tags.
+
+{<TitleComponent />}  will call the component and this will render in the DOM, but this is the self closing tags. We cannot render anything in between these tags.
+
+{<TitleComponent ></TitleComponent >} we can render some things in between.
